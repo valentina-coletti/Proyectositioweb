@@ -1,4 +1,5 @@
 
+
   @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 *{
@@ -20,7 +21,7 @@ header{
     padding: 20px 0;
     height: 60px;
     position: sticky;
-}
+  }
 
 header img{
     display: inline-block;
@@ -30,55 +31,54 @@ header img{
   } 
   
 
-
-
+  /*MENU DESPLEGABLE*/
 
 .sidebar {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgb(49, 48, 48);
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(49, 48, 48);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
 
 .sidebar a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 20px;
-  color: white;
-  display: block;
-  transition: 0.3s;
-  font-family: 'Anton', sans-serif;
-}
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Anton', sans-serif;
+  }
 
 .sidebar a:hover {
-  color: #f1f1f1;
-}
+    color: #f1f1f1;
+  }
 
 .sidebar .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
 
 .openbtn {
-  font-size: 40px;
-  cursor: pointer;
-  background-color: transparent;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  position: absolute;
-  left: 0 ;
-  margin-top: -30px;
-}
+    font-size: 40px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    position: absolute;
+    left: 0 ;
+    margin-top: -30px;
+  }
 
 .openbtn:hover {
   background-color: darkorange;
@@ -94,9 +94,7 @@ header img{
   .sidebar a {font-size: 18px;}
 }
 
-
-
-
+  /*ENCABEZADO CON TITULO*/
 
 .encabezado-img{
     background-image:url(Imagenes/growleer.png);
@@ -113,7 +111,6 @@ header img{
 .encabezado-img p{
     font-size:  80px; ;
 }
-
 
 .encabezado-img h1{
     font-size: 150px;
@@ -133,8 +130,6 @@ header img{
   text-decoration: none;
   font-family: 'Anton', sans-serif;
   width: 100%;
-  opacity: 90%;
-  padding: 0px;
   display: flex;
 }
 
@@ -147,8 +142,8 @@ header img{
 
 .botoncerveza :hover{
   background-color: #6dbe94;
-  border-radius: 5px;
-  padding: 1px;
+  border-radius: 2px;
+  padding: 5px;
 }
 
 .botoncomida a { 
@@ -158,8 +153,8 @@ header img{
 
 .botoncomida :hover{
   background-color: #6dbe94;
-  border-radius: 5px;
-  padding: 1px;
+  border-radius: 2px;
+  padding: 5px;
 }
 
 .botonreserva a{ 
@@ -169,11 +164,9 @@ header img{
 
 .botonreserva :hover{
   background-color: #6dbe94;
-  border-radius: 5px;
-  padding: 1px;
+  border-radius: 2px;
+  padding: 5px;
 }
-
-
 
 .cajacontenedora {
   
@@ -190,36 +183,40 @@ header img{
 .tipocerveza { 
   justify-content: center;
   flex: 30%;
+  padding: 20px;
+
   
 }
 
 .tipocerveza :hover {
   background-color: #6dbe94;
-  padding: 10px;
+  padding: 8px;
 }
  
 
 .menu {
   flex: 30%;
+  padding: 20px;
+
 }
 
 .menu :hover{
   background-color: #6dbe94;
-  padding: 10px;
+  padding: 8px;
 }
 
 .reservas {
    flex: 30%;
+   padding: 20px;
+
 
 }
 
 
 .reservas :hover{
   background-color: #6dbe94;
-  padding: 10px;
+  padding: 8px;
 }
-
-
 
 img {
   width: 100%;
@@ -232,7 +229,7 @@ img {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
-    background-color: #6dbe94;
+    background-color: #7b240f;
     height: 600px;
 }
 
@@ -240,15 +237,10 @@ img {
   font-size: 25px;
   text-align: center;
   font-family: 'Anton', sans-serif;
-  color: #333;
+  color: #f1f1f1;
   margin-left: 20%;
   
-
-
-
 }
-
-
 
 
 * {box-sizing: border-box}
@@ -262,7 +254,6 @@ img {vertical-align: middle;}
   position: relative;
   margin: auto;
 }
-
 
 .prev, .next {
   cursor: pointer;
@@ -279,7 +270,6 @@ img {vertical-align: middle;}
   user-select: none;
 }
 
-
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
@@ -289,7 +279,6 @@ img {vertical-align: middle;}
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
-
 
 .text {
   color: #f2f2f2;
@@ -312,15 +301,12 @@ img {vertical-align: middle;}
   to {opacity: 1}
 }
 
-
-
-
 .cajacontenedora3 {
-  background-color: #6dbe94;
+  background-color: #D86712;
     padding: 20px;
     border-radius: 5px;
     text-align: center;
-    height: 200px;
+    height: 300px;
   }
   
   .cajacontenedora3 h1 {
@@ -328,8 +314,18 @@ img {vertical-align: middle;}
     color: #333;
     margin-bottom: 20px;
     font-family: 'Anton', sans-serif;
+  }
 
-    
+  .cajacontenedora3 p{
+    font-size: 20px;
+    color: #333;
+    font-family: 'Anton', sans-serif;
+  }
+
+  .cajacontenedora3 p{
+    font-size: 15px;
+    color:#333;
+    font-family: 'Anton', sans-serif;
   }
   
   .cajacontenedora3 a {
@@ -345,7 +341,7 @@ img {vertical-align: middle;}
   
   .cajacontenedora3 a:hover {
     color: #555;
-    background-color: #6dbe94;
+    background-color: #333;
     padding: 0px;
   }
 
@@ -354,7 +350,7 @@ img {vertical-align: middle;}
   display: flex;
   width: 100%;
   height: 50px;
-  background-color: #555;
+  background-color: #D86712;
   justify-content: space-around;
   align-items: center;
 
@@ -368,14 +364,639 @@ img {vertical-align: middle;}
     height: 50px;
 
     display: flex;
-    
+
   
+  }
+ 
+
+
+
+/*REGISTRATE*/
+
+
+ /* Estilos para el formulario */
+ form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+button {
+  background-color: #6dbe94;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+button:hover {
+  opacity: 0.9;
+}
+/* Estilos para el contenedor */
+.container {
+  width: 50%;
+  margin: auto;
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 20px;
+}
+ 
+/* Estilos para el contenedor 2 */
+.container2 {
+  width: 50%;
+  margin: auto;
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 20px;
+}
+
+
+/* Estilos para el formulario 2 */
+ form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input[type=text], input[type=password], input[type=repeatpassword], input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+button {
+  background-color: #6dbe94;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+button:hover {
+  opacity: 0.9;  
+
+  }
+
+  .encabezado-registrate h2{
+    font-size: 70px;
+    padding: 10px;
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    background-color: #333;
+    
+   
+  }
+
+  .encabezado-registrate { 
+    background-image:url(Imagenes/senor\ cerveza.png);
+    background-size: cover;
+    height: 900px;
+    display: flex;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:rgb(255, 255, 255) ;
+    
+  }
+
+/*CERVEZAS*/
+
+
+ .CERVEZAS H1{
+  font-size: 100px;
+  padding: 10px;
+  font-family: 'Anton', sans-serif;
+  text-align: left;
+  background-color: #7b240f;
+  }
+.CERVEZAS {
+    background-image:url(Imagenes/cerveza\ logo\ A.jpg);
+    background-size: cover;
+    height: 900px;
+    display: flex;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:rgb(255, 255, 255) ;
+    
+  }
+
+
+  .cajadecervezas { 
+      background-color: #7b240f;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      height: 1000px;
+      text-align: center;
+      font-family: 'Anton', sans-serif;
+      color: #f1f1f1;
+      padding: 5px;
+      
+    }
+
+   
+
+  .add-to-cart {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 50px;
+  }
+  
+
+  .cervezahoney img{
+    flex: 30%;
+   width: 400px;
+    height: 400px;
+    padding: 20px;
+  }
+
+ 
+
+ 
+
+  .cervezaapa img{
+    flex: 30%;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+
+  }
+
+  
+
+  .cervezarubia img{
+    flex: 30%;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+
+  }
+
+  
+
+
+  .cervezaroja img{
+    flex: 30%;
+    width: 400px;
+    height: 370px;
+    padding: 20px;
+
   }
 
 
 
+  .cervezanegra img{
+    flex: 30%;
+    width: 400px;
+    height: 370px;
+    padding: 20px;
+
+  }
 
 
+
+  .cervezagold img{
+    flex: 30%;
+    width: 400px;
+    height: 370px;
+    padding: 20px;
+
+  }
+
+
+/*CARTA*/
+
+
+.carta H1{
+  font-size: 100px;
+  padding: 20px;
+  font-family: 'Anton', sans-serif;
+  text-align: center;
+  background-color: #7b240f;
+  color: #f1f1f1;
+  }
+
+
+  .carta {
+    background-image:url(Imagenes/Captura\ de\ pantalla\ \(109\).png);
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:rgb(255, 255, 255) ;
+    
+  }
+
+  
+
+  .comida {
+      background-color: #7b240f;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      height: 900px;
+      text-align: center;
+      font-family: 'Anton', sans-serif;
+      color: #f1f1f1;
+      padding: 5px;
+  }
+  .add-to-cart {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 50px;
+  }
+  
+ 
+
+ 
+  .pizza img{
+    flex: 30%;
+   width: 350px;
+    height: 350px;
+    padding: 20px;
+    }
+
+  .pizza img:hover{
+    background-color: #6dbe94;
+    padding: 3px;
+  }
+
+
+  .papascheddar img{
+    flex: 30%;
+    width: 350px;
+    height: 350px;
+    padding: 20px;
+  }
+
+  .papascheddar img:hover{
+    background-color: #6dbe94;
+    padding: 3px;
+  }
+
+
+  .hamburguesas img{
+    flex: 30%;
+    width: 350px;
+    height: 350px;
+    padding: 20px;
+  }
+
+  .hamburguesas img:hover{
+    background-color: #6dbe94;
+    padding: 3px;
+  }
+
+
+  .bastones img{    
+    flex: 30%;
+    width: 350px;
+    height: 350px;
+    padding: 20px;
+
+  }
+
+  .bastones img:hover{
+    background-color: #6dbe94;
+    padding: 3px;
+  }
+
+
+  .empanadas img{
+    flex: 30%;
+    width: 350px;
+    height: 350px;
+     padding: 20px;
+  }
+
+  .empanadas img:hover{
+    background-color: #6dbe94;
+    padding: 3px;
+  }
+
+
+  .postres img{
+    flex: 30%;
+    width: 350px;
+    height: 350px;
+    padding: 20px;
+  
+  }
+
+  .postres img:hover{
+    background-color: #6dbe94;
+    padding: 3px;
+  }
+
+
+  .ensalada img{
+    flex: 30%;
+    width: 350px;
+    height: 350px;
+    padding: 20px;
+  }
+
+  .ensalada img:hover{
+    background-color: #6dbe94;
+    padding: 3px;
+  }
+
+  
+  .torta img{ 
+    flex: 30%;
+    width: 350px;
+    height: 350px;
+    padding: 20px;
+  }
+
+  .torta img:hover{
+    background-color: #6dbe94;
+    padding: 3px;
+  }
+
+
+ 
+
+
+  
+  /*RESERVA*/
+
+  .fondo h1{
+    color: #f1f1f1;
+    width: 450px;
+    background-color: #555;
+    padding: 5px;
+    font-family: 'Anton', sans-serif;
+    font-size: 95px;
+    text-align: center;
+
+  }
+  .fondo {
+    background-image:url(Imagenes/paradatractor5.jpg);
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white ;
+
+  }
+  
+
+  .contenedorcontacto h2{
+    color: #f1f1f1;
+    font-family: 'Anton', sans-serif;
+
+  }
+  .contenedorreserva h2{
+    color: #f1f1f1;
+    padding: 8px;
+    font-family: 'Anton', sans-serif;
+
+  }
+
+  .contacto-reserva {
+    background-color: #892f18;
+    height: 500px;
+  }
+
+  /* Estilos para el formulario */
+  #fecha {
+    width: 300px;
+    height: 30px;
+  }
+
+  #tiempo {
+    width: 300px;
+    height: 30px;
+  }
+
+  #numero{
+    width: 300px;
+    height: 30px;
+  }
+
+  #personas{
+    width: 300px;
+    height: 30px;
+  }
+
+  
+ form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+button {
+  background-color: #6dbe94;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+button:hover {
+  opacity: 0.9;
+}
+/* Estilos para el contenedor */
+.contenedorcontacto {
+  width: 50%;
+  margin: auto;
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 20px;
+}
+
+.contenedorreserva {
+  width: 50%;
+  margin: auto;
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 20px;
+}
+
+/* GRACIAS */
+
+.gracias h1{
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  font-size: 100px;
+  color: #6dbe94;
+  padding: 100px;
+}
+
+.gracias img{
+  width: 33%;
+  height: 300px;
+  justify-content: center;
+
+ 
+}
+
+.gracias {
+  background-color: #555;
+  height: 700px;
+
+}
+
+
+ /* RESPONSIVE CELULAR*/
+@media screen and (max-width: 600px) {
+
+    /* INICIO*/
+
+  .encabezado-img {
+   
+    background-position: center;
+    
+  }
+
+  .encabezado-img p{
+    text-align: center;
+  }
+
+
+.tipocerveza img{
+
+    width: 200px;
+    height: 300px;
+    flex-direction: column;
+    
+}
+
+.menu img{
+  
+  width: 200px;
+  height: 300px;
+  flex-direction: column;
+}
+
+.reservas img{
+  
+  width: 200px;
+  height: 300px;
+  flex-direction: column;
+}
+
+  .cajacontenedora2{
+    width: 100%;
+    
+  }
+
+  .cajacontenedora2 p{
+    text-align: center;
+    font-size: medium;
+  }
+
+  .cajacontenedora3{
+    background-color: #D86712;
+    height: 100%;
+  }
+
+  .cajacontenedora3 h1{
+    font-size: medium;
+  }
+
+  .slideshow-container{
+    width: 100%;
+  }
+  
+  .sidebar{
+  width: 30%;
+  }
+
+  /* CARTA */
+.comida{
+  background-color: #7b240f;
+  height: 100%;
+}
+
+.comida img{
+  flex-direction: column;
+}
+
+.carta{
+  background-position: center;
+}
+  /* REGISTRATE */
+.encabezado-registrate{
+  background-position: center;
+}
+.container{
+  width: 100%;
+}
+.container2{
+  width: 100%;
+}
+
+.sidebar{
+  width: 40%;
+}
+
+  /* CERVEZAS */
+
+.cervezas{
+  width: 30px;
+  background-position: center;
+  font-size: 30px;
+
+}
+
+.cajadecervezas{
+  background-color: #7b240f;
+  height: 100%;
+}
+
+
+
+}
 
 
   @media only screen and (max-width: 300px) {

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> INICIAR SESIÓN/ REGISTRATE </title>
+<link rel="stylesheet" href="estilos.css">
+<link src="javascript.js">
+
+</head>
+
+<body>
+    <header>      
+        <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <a href="index.html">INICIO</a>
+          <a href="#">INICIAR SESIÓN/ REGISTRATE</a>
+          <a href="#">CARRO DE COMPRAS</a>
+          <a href="#">CARTA</a>
+          <a href="#">CERVEZAS</a>
+          <a href="#">CONTACTO/RESERVAS</a>
+          <a href="#">UBICACIÓN</a>
+        </div>
+        
+        <div id="main">
+          <button class="openbtn" onclick="openNav()">☰</button>  
+        
+        </div>
+  
+      </header>

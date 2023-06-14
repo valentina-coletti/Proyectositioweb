@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> RESERVAS </title>
+<link rel="stylesheet" href="estilos.css">
+<link src="javascript.js">
+
+</head>
+
+<body>
+    <header>      
+        <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <a href="index.html">INICIO</a>
+          <a href="registrate.html">INICIAR SESIÓN/ REGISTRATE</a>
+          <a href="carta.html">CARTA</a>
+          <a href="Cervezas.html">CERVEZAS</a>
+          <a href="reserva.html">RESERVAS</a>
+        </div>
+        
+        <div id="main">
+          <button class="openbtn" onclick="openNav()">☰</button>  
+        
+        </div>
+      </header>
+
+      <div class="fondo">
+        <h1>¡HACÉ TU RESERVA!</h1>
+    
+      </div>
+
+      <div class="contacto-reserva">
+
+        <div class="contenedorcontacto">
+          <h2>DATOS PARA LA RESERVA</h2>
+          <form>
+           
+            <input type="text" id="username" name="username" placeholder="Ingresa tu nombre de usuario" required>
+      
+            <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
+          </form>
+        </div>
+
+
+
+        <div class="contenedorreserva">
+          <h2>ESPECIFICACIONES</h2>
+           <form action="./gracias.html">
+                <input type="date" id="fecha" name="datos" placeholder="FECHA" required>
+                <input type="time" id="tiempo" name="datos" placeholder="HORA" required>
+               <input type="number" id="personas" name="datos" placeholder="N° DE PERSONAS" required>
+
+                <input type="tel" id="numero" name="numero" placeholder="Número de celular" required>
+
+                 <button type="submit">ENVIÁ TU RESERVA </button>
+            </form>
+        </div>
+
+  </div>
+
+
+
+
+
+
+  <footer> 
+    <div class="redes">
+      
+      <a href=" https://wa.me/3442539608"> <img src="Imagenes/whatsapp (1).svg" alt="logo whatsapp"> </a>
+     
+      <a href="https://www.facebook.com/cervezatractor"> <img src="Imagenes/facebook (1).svg" alt="logo facebook"> </a>
+      
+       <a href="https://www.instagram.com/cervezatractor/?hl=es"><img src="Imagenes/instagram (1).svg" alt="logo instagram"> </a>
+
+    </div>
+  </footer>
+
+
+
+
+
+
+      <script>    
+
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+    
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+    
+        } 
+    
+    
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+        </script>
+    
+</body>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> CARTA </title>
+<link rel="stylesheet" href="estilos.css">
+<link src="javascript.js">
+
+</head>
+
+<body>
+    <header>      
+        <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <a href="index.html">INICIO</a>
+          <a href="registrate.html">INICIAR SESIÓN/ REGISTRATE</a>
+          <a href="carta.html">CARTA</a>
+          <a href="Cervezas.html">CERVEZAS</a>
+          <a href="reserva.html">RESERVAS</a>
+        </div>
+        
+        <div id="main">
+          <button class="openbtn" onclick="openNav()">☰</button>  
+        
+        </div>
+  
+      </header>
+
+      <div class="carta">
+        <H1> CARTA </H1>
+      </div>
+     
+
+      <div class="comida">
+
+        <div class="pizza"> <img src="Imagenes/pizza.jpg" alt=""><p>Pizza TRÄCTOR</p> <p>$1300</p> <button class="add-to-cart">+</button></div>
+
+        <div class="papascheddar"> <img src="Imagenes/comida2.png" alt=""><p>Papas cheddar</p><p>$1000</p><button class="add-to-cart">+</button></div>
+
+        <div class="hamburguesas"> <img src="Imagenes/comida3.jpg" alt=""><p>Hamburguesa TRÄCTOR </p><p>$1200</p><button class="add-to-cart">+</button></div>
+
+        <div class="bastones"> <img src="Imagenes/comida/bastones.jpg" alt=""><p>Bastones de muzzarella</p><p>$1000</p><button class="add-to-cart">+</button></div>
+
+        <div class="empanadas"> <img src="Imagenes/comida6.jpg" alt=""><p>Empanadas</p><p>$300 c/u</p><button class="add-to-cart">+</button></div>
+        
+        <div class="ensalada"> <img src="Imagenes/comida1.png" alt=""><p>Ensalada de frutos secos</p><p>$1000</p><button class="add-to-cart">+</button></div>
+
+        <div class="postres"> <img src="Imagenes/comida/postre.jpg" alt=""><p>Postre oreo</p><p>$900</p><button class="add-to-cart">+</button></div>
+
+        <div class="torta"> <img src="Imagenes/comida4.jpg"alt=""><p>Cheescake</p><p>$000</p><button class="add-to-cart">+</button></div>
+
+      </div>
+
+      <footer> 
+        <div class="redes">
+          
+          <a href=" https://wa.me/3442539608"> <img src="Imagenes/whatsapp (1).svg" alt="logo whatsapp"> </a>
+         
+          <a href="https://www.facebook.com/cervezatractor"> <img src="Imagenes/facebook (1).svg" alt="logo facebook"> </a>
+          
+           <a href="https://www.instagram.com/cervezatractor/?hl=es"><img src="Imagenes/instagram (1).svg" alt="logo instagram"> </a>
+
+        </div>
+      </footer>
+
+
+      <script>   
+
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+    
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+    
+        } 
+    
+    
+    
+        
+        let slideIndex = 1;
+          showSlides(slideIndex);
+          
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+          
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+          
+          function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+          }
+        </script>
+    
+
+</body>
+

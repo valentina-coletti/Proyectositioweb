@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> CARTA </title>
+<link rel="stylesheet" href="estilos.css">
+<link src="javascript.js">
+
+</head>
+
+<body>
+    <header>      
+        <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <a href="index.html">INICIO</a>
+          <a href="registrate.html">INICIAR SESIÓN/ REGISTRATE</a>
+          <a href="#">CARRO DE COMPRAS</a>
+          <a href="carta.html">CARTA</a>
+          <a href="Cervezas.html">CERVEZAS</a>
+          <a href="#">CONTACTO/RESERVAS</a>
+          <a href="#">UBICACIÓN</a>
+        </div>
+        
+        <div id="main">
+          <button class="openbtn" onclick="openNav()">☰</button>  
+        
+        </div>
+      </header>
+
+      <div class="contacto-reserva">
+
+        <div class="contenedorcontacto">
+          <h2>INICIO DE SESIÓN</h2>
+          <form>
+           
+            <input type="text" id="username" name="username" placeholder="Ingresa tu nombre de usuario">
+      
+            <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña">
+      
+            <button type="submit">Iniciar sesión</button>
+          </form>
+        </div>
+
+
+
+        <div class="contenedorreserva">
+          <h2>REGISTRATE</h2>
+          <form>
+           
+            <input type="text" id="username" name="username" placeholder="Crea tu nombre de usuario">
+      
+            <input type="password" id="password" name="password" placeholder="Crea tu contraseña">
+
+            <input type="repeatpassword" id="repeatpassword" name="repeatpassword" placeholder="Repite tu contraseña">
+            
+      
+            <button type="submit">Crea tu cuenta </button>
+          </form>
+        </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <script>    
+
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+    
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+    
+        } 
+    
+    
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+        </script>
+    
+</body>
