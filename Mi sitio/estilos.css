@@ -293,7 +293,7 @@ img {vertical-align: middle;}
 
 .fade {
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 1.0s;
 }
 
 @keyframes fade {
@@ -902,27 +902,33 @@ button:hover {
     text-align: center;
   }
 
+.palabrascajas a{
+  opacity: 0%;
+}
+  .cajacontenedora{
+    height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
 
 .tipocerveza img{
 
-    width: 200px;
-    height: 300px;
-    flex-direction: column;
+    width: 100%;
+    height: 600px;    
     
 }
 
 .menu img{
   
-  width: 200px;
-  height: 300px;
-  flex-direction: column;
+  width: 100%;
+  height: 600px;
 }
 
 .reservas img{
   
-  width: 200px;
-  height: 300px;
-  flex-direction: column;
+  width: 100%;
+  height: 600px;
 }
 
   .cajacontenedora2{
@@ -933,6 +939,8 @@ button:hover {
   .cajacontenedora2 p{
     text-align: center;
     font-size: medium;
+    align-items: center;
+    justify-content: center;
   }
 
   .cajacontenedora3{
@@ -945,8 +953,12 @@ button:hover {
   }
 
   .slideshow-container{
-    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    height: auto;
   }
+
+ 
   
   .sidebar{
   width: 30%;
@@ -992,14 +1004,212 @@ button:hover {
 .cajadecervezas{
   background-color: #7b240f;
   height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.cervezas H1{
+  text-align: center;
+  align-items: center;
+}
+
+}
+
+ /* RESPONSIVE TABLET*/
+ @media screen and (max-width: 900px) {
+   /* INICIO*/
+
+   .encabezado-img {
+   
+    background-position: center;
+    
+  }
+
+  .encabezado-img p{
+    text-align: center;
+  }
+
+
+  .cajacontenedora{
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+    
+
+.tipocerveza img{
+  display: flex;
+    width: 100%;
+    height: 300px;
+    
+  }
+
+.menu img{
+  display: flex;
+  width: 100%;
+  height: 300px;
+
+  }
+
+.reservas img{
+  display: flex;
+  width: 100%;
+  height: 300px;
+
+  }
+
+  .cajacontenedora2{
+    width: 100%;
+    
+  }
+
+  .cajacontenedora2 p{
+    text-align: center;
+    font-size: medium;
+    display: flex;
+    width: 100%s;
+  }
+
+  .cajacontenedora3{
+    background-color: #D86712;
+    height: 100%;
+  }
+
+  .cajacontenedora3 h1{
+    font-size: medium;
+  }
+
+  .slideshow-container{
+    width: 100%;
+    display: flex;
+
+  }
+  
+  .sidebar{
+  width: 30%;
+  }
+
+
+
+  /* CERVEZAS */
+
+  .cervezas{
+    width: 30px;
+    background-position: center;
+    font-size: 30px;
+  
+  }
+  
+  .cajadecervezas{
+    background-color: #7b240f;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cervezas H1{
+    text-align: center;
+    align-items: center;
+  }
+  
+.cervezahoney img{
+  width: 80%;
+  height: 300px;
+}
+
+.cervezaapa img{
+  width: 80%;
+  height: 300px;
+}
+
+.cervezagold img{
+  width: 300px;
+  height: 300px;
+}
+
+.cervezarubia img{
+  width: 80%;
+  height: 300px;
+}
+
+.cervezaroja img{
+  width: 300px;
+  height: 300px;
+}
+
+.cervezanegra img{
+  width: 300px;
+  height: 300px;
 }
 
 
+     /* CARTA */
+
+.comida{
+  background-color: #7b240f;
+  height: 100%;
+}
+
+.comida img{
+  flex-direction: column;
+}
+
+.carta{
+  background-position: center;
+}
+
+
+.pizza img{
+  width: 80%;
+  height: 300px;
+}
+
+  .papascheddar img{
+    width: 70%;
+    height: 300px;
+
+  }
+
+  .hamburguesas img{
+    width: 80%;
+    height: 300px;
+
+  }
+
+  .bastones img{
+    width: 80%;
+    height: 300px;
+
+  }
+
+  .empanadas img{
+    width: 80%;
+    height: 300px;
+
+  }
+
+  .ensalada img{
+    width: 80%;
+    height: 300px;
+
+  }
+
+  .postres img{
+    width: 90%;
+    height: 300px;
+
+  }
+
+  .torta img{
+    width: 80%;
+    height: 300px;
+
+  }
+  
 
 }
 
 
   @media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 11px}
-  
   }
